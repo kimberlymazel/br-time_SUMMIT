@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+<style>
+    html {
+        height: 100%;
+        background-color: white;
+    }
+
+    body {
+        height: 40%;
+        background: linear-gradient(90deg, #77cedb, #49b2ca);
+    }
+
+    .header {
+        margin-top: 0px;
+        padding-top: 10px;
+    }
+    
+    h1{
+        color: #fcfefe;
+        font-size: 200%;
+    }
+
+    h2 {
+        color: #fcfefe;
+        margin-top: 0px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    h3 {
+        color: #fcfefe;
+        margin-bottom: 3px;
+        font-weight: lighter;
+        font-size: 20px;
+    }
+
+    .search {
+        border-radius: 10px;
+        background: white;
+        height: 18%;
+        margin-top: 5%;
+        align-items: center;
+    }
+
+    input {
+        width: 80%;
+        border: none;
+        background: none;
+        outline: none;
+        margin-left: 3%;
+    }
+
+    .sliding{
+        display: flex;
+        max-height: 290px;
+        overflow-x: auto;
+    }
+    
+    .sliding .rec {
+        min-width: 100%;
+        line-height: 1500%;
+    }
+    
+    .activity {
+        margin-top: 3%;
+        display: flex;
+        padding-bottom: 20%;
+    }
+
+    .profile {
+        border-radius: 50%;
+        width: 50px;
+        float: right;
+        margin-top: 20px;
+    }
+
+    .search-icon {
+        width: 5%;
+        margin-left: 15px;
+        margin-top: 12px;
+    }
+
+    .column {
+        float: left;
+        width: 25%;
+    }
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    @media screen and (max-width: 600px) {
+    .column {
+        width: 50%;
+    }
+    }
+    
+    .menu {
+        height: 150%;
+        width: 150%;
+    }
+
+    .nav-menu {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        background-color: #00B2CA;
+        width: 100%;
+        height: 5rem;
+        padding: 0 0.5rem;
+        display: grid;
+        align-content: center;
+        border-radius:3rem 3rem 0 0;
+        transition: 0.4s;
+    }
+
+    .nav-list, .nav-link {
+        display: flex;
+        padding: 1.25rem;
+        margin: 0;
+    }
+
+    .nav-link {
+        flex-direction: column;
+        align-items: center;
+        row-gap: .25rem;
+        color: white;
+    }
+
+    .nav-list {
+        justify-content: space-between;
+    }
+
+    .nav-name {
+        font-size: 10px;
+    }
+
+    .nav-icon {
+        font-size: 1.5rem;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+</style>
+</head>
+
+<header>
+    <div class="nav-menu">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class='bx bxs-dashboard nav-icon'></i>
+                        <span class="nav-name">Menu</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class='bx bxs-bell nav-icon' ></i>
+                        <span class="nav-name">Alerts</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class='bx bxs-bookmark nav-icon' ></i>
+                        <span class="nav-name">Bookmark</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class='bx bxs-user nav-icon' ></i>
+                        <span class="nav-name">Profile</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class='bx bx-search nav-icon' ></i>
+                        <span class="nav-name">Search</span>
+                    </a>
+                </li>
+
+            </ul>
+    </div>
+</header>
+
+<div class="header">
+    <img src="https://i.ibb.co/9Z8q73y/download.png" class="profile">
+    <h3>Welcome back,</h3>
+    <h2>John Doe</h2>
+</div>
+
+<div class="search">
+    <img src="https://i.ibb.co/y8FzvP5/kindpng-336780.png" class="search-icon">
+    <input type="text" placeholder="Search for topics, classes, events...">
+</div>
+
+<div class="recommendation">
+    <h1>Recommendation</h1>
+    <div class="sliding">
+        <div class="rec"><img src="https://i.ibb.co/HVT4Q48/rec1-fixed-2x.png"></div>
+        <div class="rec"><img src="https://i.ibb.co/cNmBF6L/rec2-fixed-2x.png"></div>
+    </div>
+</div>
+
+<div class="activity">
+    <div class="row">
+        <div class="column">
+            <img src="https://i.ibb.co/VxVjGpk/first.png" class="menu">
+        </div>
+        <div class="column">
+            <img src="https://i.ibb.co/VSDVcsN/second.png" class="menu">
+        </div>
+        <div class="column">
+            <img src="https://i.ibb.co/T2T2pbZ/third.png" class="menu">
+        </div>
+        <div class="column">
+            <img src="https://i.ibb.co/MMJ3KxB/fourth.png" class="menu">
+        </div>
+    </div>
+</div>
+
