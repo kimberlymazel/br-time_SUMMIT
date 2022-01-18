@@ -12,10 +12,23 @@
             }
 
             body {
+                padding: 0;
+                margin: 0;
+                font-family: Helvetica;
+            }
+            .header-container {
                 height: 20%;
                 background: linear-gradient(90deg, #77cedb, #49b2ca);
                 margin: 0;
+                position: relative;
+            }
+            .header {
+                padding: 25px;
+            }
+            
+            h2 {
                 padding: 0;
+                margin: 10px 0 10px 0;
             }
 
             .categories {
@@ -35,10 +48,10 @@
                 border-radius: 10px;
             }
             
-            ul{
+            .filters {
                 list-style: none;
                 margin: 0;
-                padding: 0;
+                padding: 0 30px;
                 display: flex;
                 justify-content: space-between;
                 overflow-x: scroll;
@@ -46,7 +59,7 @@
                 -webkit-overflow-scrolling: touch;
             }
 
-            li {
+            .filter {
                 display:inline;
                 color: white;
             }
@@ -137,8 +150,8 @@
                         </ul>
                 </div>
             </header>
-
-            <div class="main">
+            
+            <div class="header-container">
                 <div class="header">
                     <div class="search-container">
                         <div class="search">
@@ -147,16 +160,18 @@
                         </div>
                     </div>
                     <img src="https://i.ibb.co/dDv8kpD/back.png" class="back-icon">
-                    <div class="filtercat">
-                        <ul>
-                            <li data-filter="webinars">Webinars</li>
-                            <li data-filter="courses">Courses</li>
-                            <li data-filter="competitions">Competitions</li>
-                            <li data-filter="onsite">On-site events</li>
-                        </ul>
-                    </div>
                 </div>
-                <h2 class="title">Explore categories</h2>
+                <div class="filtercat">
+                    <ul class="filters">
+                        <li class="filter" data-filter="webinars">Webinars</li>
+                        <li class="filter" data-filter="courses">Courses</li>
+                        <li class="filter" data-filter="competitions">Competitions</li>
+                        <li class="filter" data-filter="onsite">On-site events</li>
+                    </ul>
+                </div>
+
+                <div class="main">
+                <h2>Explore categories</h2>
                 <div class="categories" data-item="webinars">
                     <div class="row">
                         <div class="blockcard">

@@ -37,18 +37,6 @@ a:active {
     border-radius:0 0 2rem 2rem;
 }
 
-/* .hero-image:before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: black;
-    opacity: 10%;
-} */
-
 .upper-info {
     position: absolute;
     top: 35vh;
@@ -86,6 +74,74 @@ a:active {
     box-shadow: 0px 3px 3px rgb(231, 231, 231);
 }
 
+/* ===== POP-UP ===== */
+.popup-overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    user-select: none;
+    opacity: 0;
+}
+.popup-container {
+    background-color: white;
+    width: 300px;
+    height: 25vh;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top:35%;
+    transform: translate(-50%);
+    border-radius: 15px;
+    align-items: center;
+    display: flex;
+    padding: 1rem;
+}
+.close {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 10%;
+}
+.input-wrapper {
+    display: block;
+}
+input[type=email] {
+    width: 80%;
+    padding: 10px 20px;
+    margin: 10px 0;
+    display: inline-block;
+    background-color: rgb(240, 240, 240);
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 15px;
+  }
+button[type=submit] {
+    width: 80%;
+    border: none;
+    background-color: #00B2CA;
+    border-radius: 0.5rem;
+    padding: 0.8rem 1rem;
+    color: white;
+    font-weight: bold;
+}
+.label {
+    font-size: 22px;
+    padding-bottom: 10px;
+    margin: 0;
+}
+.sublabel {
+    font-size: 12px;
+    padding-bottom: 10px;
+    margin: 0;
+}
 
 /* ===== MAIN ===== */
 .main {
@@ -153,7 +209,7 @@ a:active {
     position: fixed;
     bottom: 0;
     left: 0;
-    background-image: linear-gradient(rgba(255,0,0,0), rgb(255, 255, 255),rgb(255, 255, 255), rgb(255, 255, 255));
+    background-image: linear-gradient(rgba(255,0,0,0), rgb(255, 255, 255));
     width: 100%;
     height: 8rem;
     padding: 0;
@@ -259,4 +315,10 @@ a:active {
     .grid {
         padding-bottom: 2rem;
     }
+}
+
+/* JS */
+.active {
+    opacity: 1;
+    z-index: 1;
 }
