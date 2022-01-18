@@ -5,9 +5,11 @@
 <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
 <link rel="stylesheet" href="stylesheetmain.css">
 <title>SUMMIT Main Page</title>
+
 </head>
 
-<!-- NAVIGATION BAR FOR BOTTOM OF SCREEN -->
+<body>
+    <!-- NAVIGATION BAR FOR BOTTOM OF SCREEN -->
 <header>
     <div class="nav-menu">
             <ul class="nav-list">
@@ -50,45 +52,103 @@
     </div>
 </header>
 
-<!-- WELCOME BACK HEADER WITH PROFILE -->
-<div class="header">
-    <img src="assets/pp.png" class="profile">
-    <h3>Welcome back,</h3>
-    <h2>John Doe</h2>
-</div>
-
-<!-- SEARCH BAR -->
-<div class="search-container">
-    <div class="search">
-        <img src="assets/search.png" class="search-icon">
-        <input type="text" placeholder="Search for topics, classes, events...">
+<div class="container">
+        <!-- WELCOME BACK HEADER WITH PROFILE -->
+    <div class="header">
+        <div class="texts">
+            <h3>Welcome back,</h3>
+            <h2>John Doe</h2>
+        </div>
+            <img src="assets/pp.png" class="profile" aria-controls="profile-container">
     </div>
-</div>
 
-<!-- CAROUSEL RECOMMENDATIONS -->
-<div class="recommendation">
-    <h1 class ="title">Recommendation</h1>
-    <div class="sliding">
-        <div class="rec"><img src="assets/rec1.png" class="recc"></div>
-        <div class="rec"><img src="assets/rec2.png" class="recc"></div>
-    </div>
-</div>
-
-<!-- 4 ACTIVITIES BOX -->
-<div class="activity">
-    <div class="row">
-        <div class="column">
-            <a href="explore.html"><img src="assets/first.png" class="menu"></a> <!--FIND WEBINARS-->
-        </div>
-        <div class="column">
-            <a href="explore.html"><img src="assets/second.png" class="menu"></a> <!--FIND COURSES-->
-        </div>
-        <div class="column">
-            <a href="explore.html"><img src="assets/third.png" class="menu"></a> <!--ON-SITE EVENTS-->
-        </div>
-        <div class="column">
-            <a href="explore.html"><img src="assets/fourth.png" class="menu"></a> <!--COMPETITIONS-->
+    <!-- SEARCH BAR -->
+    <div class="search-container">
+        <div class="search">
+            <img src="assets/search.png" class="search-icon">
+            <input type="text" placeholder="Search for topics, classes, events...">
         </div>
     </div>
+
+    <!-- SIDE PROFILE -->
+        <div class="profile-container" id="profile-container" data-visible="false">
+            <i class='bx bx-x close'></i>
+            <div class="upper-prof">
+                <!-- <i class='bx bx-x'></i> -->
+                <img src="assets/pp.png" class="profile2">
+                <h3 class="name">John Doe</h3>
+                <p class="det">johndoe@gmail.com</p>
+                <p class="det">+62118105522</p>
+            </div>
+            <div class="middle-prof">
+                <ul class="links">
+                    <li class="link">
+                        <i class='bx bx-chevron-left left' ></i>
+                        <span class="link-name">Upcoming events<i class='bx bx-calendar right' ></i></span>
+                    </li>
+                    <hr class="divider">
+                    <li class="link">
+                        <i class='bx bx-chevron-left left' ></i>
+                        <span class="link-name">Payment<i class='bx bxs-credit-card right' ></i></span>
+                    </li>
+                    <hr class="divider">
+                    <li class="link">
+                        <i class='bx bx-chevron-left left' ></i>
+                        <span class="link-name">Event history<i class='bx bxs-receipt right' ></i></span>
+                    </li>
+                    <hr class="divider">
+                    <li class="link">
+                        <i class='bx bx-chevron-left left' ></i>
+                        <span class="link-name">Help center<i class='bx bxs-help-circle right' ></i></span>
+                    </li>
+                    <hr class="divider">
+                    <li class="link">
+                        <i class='bx bx-chevron-left left' ></i>
+                        <span class="link-name">Invite friends<i class='bx bxs-chat right' ></i></span>
+                    </li>
+                    <hr class="divider">
+                </ul>
+            </div>
+            <div class="bottom-prof">
+                <ul class="links">
+                    <li class="link">
+                        <i class='bx bx-chevron-left left' ></i>
+                        <span class="link-name">Settings<i class='bx bxs-edit right'></i></span>
+                    </li>
+                    <hr class="divider">
+                </ul>
+                <button class="logout">Log out</button>
+            </div>
+        </div>
+
+    <!-- CAROUSEL RECOMMENDATIONS -->
+    <div class="recommendation">
+        <h1 class ="title">Recommendation</h1>
+        <div class="sliding">
+            <div class="rec"><img src="assets/rec1@2x.png" class="recc"></div>
+            <div class="rec"><img src="assets/rec2@2x.png" class="recc"></div>
+        </div>
+    </div>
+
+    <!-- 4 ACTIVITIES BOX -->
+    <div class="activity">
+        <div class="row">
+            <div class="column">
+                <a href="explore.html"><img src="assets/first.png" class="menu"></a> <!--FIND WEBINARS-->
+            </div>
+            <div class="column">
+                <a href="explore.html"><img src="assets/second.png" class="menu"></a> <!--FIND COURSES-->
+            </div>
+            <div class="column">
+                <a href="explore.html"><img src="assets/third.png" class="menu"></a> <!--ON-SITE EVENTS-->
+            </div>
+            <div class="column">
+                <a href="explore.html"><img src="assets/fourth.png" class="menu"></a> <!--COMPETITIONS-->
+            </div>
+        </div>
+    </div>
 </div>
+<script src="myscripts2.js" defer></script>
+</body>
+
 </html>
