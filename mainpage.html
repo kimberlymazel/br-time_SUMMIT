@@ -4,6 +4,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 <style>
+    * {
+        font-family: Helvetica, sans-serif;
+    }
+
     html {
         height: 100%;
         background-color: white;
@@ -12,16 +16,20 @@
     body {
         height: 40%;
         background: linear-gradient(90deg, #77cedb, #49b2ca);
+        margin: 0;
+        padding: 0;
     }
 
     .header {
         margin-top: 0px;
-        padding-top: 10px;
+        padding-top: 1px;
     }
     
     h1{
         color: #fcfefe;
-        font-size: 200%;
+        font-size: 180%;
+        margin-bottom: 5px;
+        margin-top: 15px;
     }
 
     h2 {
@@ -29,6 +37,7 @@
         margin-top: 0px;
         font-size: 20px;
         font-weight: 500;
+        padding: 0 1rem 0 1rem;
     }
 
     h3 {
@@ -36,14 +45,17 @@
         margin-bottom: 3px;
         font-weight: lighter;
         font-size: 20px;
+        padding: 0 1rem 0 1rem;
     }
 
     .search {
+        display: flex;
         border-radius: 10px;
         background: white;
         height: 18%;
         margin-top: 5%;
-        align-items: center;
+        padding: 14px 15px 14px 15px;
+        width: 92%;
     }
 
     input {
@@ -56,32 +68,36 @@
 
     .sliding{
         display: flex;
-        max-height: 290px;
         overflow-x: auto;
     }
     
     .sliding .rec {
-        min-width: 100%;
-        line-height: 1500%;
+        min-width: 80%;
+        line-height: 100%;
     }
     
     .activity {
-        margin-top: 3%;
+        margin-top: 0.%;
         display: flex;
-        padding-bottom: 20%;
+        padding-bottom: 16%;
     }
 
     .profile {
-        border-radius: 50%;
         width: 50px;
         float: right;
-        margin-top: 20px;
+        padding: 0 1rem 0 1rem;
+        padding-top: 15px;
+        border-radius: 50%;
     }
 
     .search-icon {
         width: 5%;
-        margin-left: 15px;
-        margin-top: 12px;
+        margin-left: 5px;
+        margin-top: 0px;
+    }
+
+    .search-container {
+        padding: 0 1rem 0 1rem;
     }
 
     .column {
@@ -102,8 +118,8 @@
     }
     
     .menu {
-        height: 150%;
-        width: 150%;
+        height: 100%;
+        width: 100%;
     }
 
     .nav-menu {
@@ -151,6 +167,14 @@
 
     a {
         text-decoration: none;
+    }
+
+    .title {
+        padding: 0 1rem 0 1rem;
+    }
+
+    .recc {
+        height: 220px;
     }
 
 </style>
@@ -204,16 +228,18 @@
     <h2>John Doe</h2>
 </div>
 
-<div class="search">
-    <img src="https://i.ibb.co/y8FzvP5/kindpng-336780.png" class="search-icon">
-    <input type="text" placeholder="Search for topics, classes, events...">
+<div class="search-container">
+    <div class="search">
+        <img src="https://i.ibb.co/y8FzvP5/kindpng-336780.png" class="search-icon">
+        <input type="text" placeholder="Search for topics, classes, events...">
+    </div>
 </div>
 
 <div class="recommendation">
-    <h1>Recommendation</h1>
+    <h1 class ="title">Recommendation</h1>
     <div class="sliding">
-        <div class="rec"><img src="https://i.ibb.co/HVT4Q48/rec1-fixed-2x.png"></div>
-        <div class="rec"><img src="https://i.ibb.co/cNmBF6L/rec2-fixed-2x.png"></div>
+        <div class="rec"><img src="https://i.ibb.co/HVT4Q48/rec1-fixed-2x.png" class="recc"></div>
+        <div class="rec"><img src="https://i.ibb.co/cNmBF6L/rec2-fixed-2x.png" class="recc"></div>
     </div>
 </div>
 
