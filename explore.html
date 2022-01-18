@@ -1,219 +1,165 @@
 <html lang="en">
     <head>
-        <link rel="stylesheet"type="text/css" href="stylesheet.css"/>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Categories</title>
         <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-        <style>
-            html {
-                height: 100%;
-                background-color: white;
-            }
-
-            body {
-                padding: 0;
-                margin: 0;
-                font-family: Helvetica;
-            }
-            .header-container {
-                height: 20%;
-                background: linear-gradient(90deg, #77cedb, #49b2ca);
-                margin: 0;
-                position: relative;
-            }
-            .header {
-                padding: 25px;
-            }
-            
-            h2 {
-                padding: 0;
-                margin: 10px 0 10px 0;
-            }
-
-            .categories {
-                display: inline-grid;
-                grid-template-columns: repeat(2, 1fr);
-                width: fit-content;
-                padding-bottom: 4rem;
-            }
-            .blockcard {
-                grid-template-columns: 1fr;
-                grid-gap: 1rem;
-                padding: 0;
-            }
-
-            .blockpic{
-                width: 185px;
-                border-radius: 10px;
-            }
-            
-            .filters {
-                list-style: none;
-                margin: 0;
-                padding: 0 30px;
-                display: flex;
-                justify-content: space-between;
-                overflow-x: scroll;
-                scroll-snap-type: x mandatory;
-                -webkit-overflow-scrolling: touch;
-            }
-
-            .filter {
-                display:inline;
-                color: white;
-            }
-
-            .search {
-                display: flex;
-                border-radius: 10px;
-                background: white;
-                height: 30%;
-                margin-top: 5%;
-                padding: 14px 15px 14px 15px;
-                width: 100%;
-            }        
-
-            .search-icon {
-                height: 80%;
-                margin-left: 5px;
-                margin-top: 2px;
-            }
-
-            .search-container {
-                padding: 0 1rem 0 1rem;
-                float: right;
-                width: 88%;
-            }
-
-            input {
-                width: 80%;
-                border: none;
-                background: none;
-                outline: none;
-                margin-left: 3%;
-            }
-
-            .back-icon{
-                width: 12%;
-                padding: 0;
-                float:left;
-                margin-top: 20px;
-            }
-
-            .filtercat{
-                padding-top: 25%;
-            }
-
-        </style>
+        <link rel="stylesheet" href="stylesheetcategory.css">
     </head>
     <body>
         <div class="container">
-            <header>
-                <div class="nav-menu">
-                        <ul class="nav-list">
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    <i class='bx bxs-dashboard nav-icon'></i>
-                                    <span class="nav-name">Menu</span>
-                                </a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    <i class='bx bxs-bell nav-icon' ></i>
-                                    <span class="nav-name">Alerts</span>
-                                </a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    <i class='bx bxs-bookmark nav-icon' ></i>
-                                    <span class="nav-name">Bookmark</span>
-                                </a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    <i class='bx bxs-user nav-icon' ></i>
-                                    <span class="nav-name">Profile</span>
-                                </a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    <i class='bx bx-search nav-icon' ></i>
-                                    <span class="nav-name">Search</span>
-                                </a>
-                            </li>
-
-                        </ul>
-                </div>
-            </header>
-            
             <div class="header-container">
                 <div class="header">
+                    <!-- SEARCH BAR -->
                     <div class="search-container">
                         <div class="search">
                             <img src="https://i.ibb.co/y8FzvP5/kindpng-336780.png" class="search-icon">
                             <input type="text" placeholder="Search for topics">
                         </div>
                     </div>
-                    <img src="https://i.ibb.co/dDv8kpD/back.png" class="back-icon">
+                    <a href="index.html"><img src="https://i.ibb.co/dDv8kpD/back.png" class="back-icon"></a>
                 </div>
+
+                <!-- FILTER BAR -->
                 <div class="filtercat">
-                    <ul class="filters">
-                        <li class="filter" data-filter="webinars">Webinars</li>
-                        <li class="filter" data-filter="courses">Courses</li>
-                        <li class="filter" data-filter="competitions">Competitions</li>
-                        <li class="filter" data-filter="onsite">On-site events</li>
+                    <ul class="filters" id="filterbuttons">
+                        <li class="listname active" data-target="all">All</li>
+                        <li class="listname" data-target="webinars">Webinars</li>
+                        <li class ="listname" data-target="courses">Courses</li>
+                        <li class ="listname" data-target="competitions">Competitions</li>
+                        <li class ="listname" data-target="onsite">On-site events</li>
                     </ul>
                 </div>
 
                 <div class="main">
                 <h2>Explore categories</h2>
-                <div class="categories" data-item="webinars">
+                <div class="categories">
+                    <!-- WEBINARS -->
                     <div class="row">
-                        <div class="blockcard">
-                            <img src="https://i.ibb.co/yd2Kqh3/Group-50-3x.png" class="blockpic">
+                        <div class="blockcard" data-id="webinars">
+                            <img src="assets/webinar1.png" class="blockpic">
                         </div>
 
-                        <div class="blockcard">
-                            <img src="https://i.ibb.co/nMvBWv1/Group-44-3x.png" class="blockpic">
+                        <div class="blockcard" data-id="webinars">
+                            <img src="assets/webinar3.png" class="blockpic">
                         </div>
                     </div>
                     
                     <div class="row">
-                        <div class="blockcard">
-                            <img src="https://i.ibb.co/LYZYgwD/box2-3x.png" class="blockpic">
+                        <div class="blockcard" data-id="webinars">
+                            <img src="assets/webinar2.png" class="blockpic">
                         </div>
 
-                        <div class="blockcard">
-                            <img src="https://i.ibb.co/tpJ1yrY/Group-45-3x.png" class="blockpic">
+                        <div class="blockcard" data-id="webinars">
+                            <img src="assets/webinar4.png" class="blockpic">
                         </div>
                     </div>
                     
                     <div class="row">
-                        <div class="blockcard">
-                            <img src="https://i.ibb.co/VLxky8q/Group-46-3x.png" class="blockpic">
+                        <div class="blockcard" data-id="webinars">
+                            <img src="assets/webinar5.png" class="blockpic">
                         </div>
           
-                        <div class="blockcard">
-                            <img src="https://i.ibb.co/pxqDd2d/Group-48-3x.png"  class="blockpic">
+                        <div class="blockcard" data-id="webinars">
+                            <img src="assets/webinar7.png"  class="blockpic">
                         </div>
                     </div>
 
                     <div class="row">
-                        <div class="blockcard">
-                                <img src="https://i.ibb.co/HNxPnKs/Group-47-3x.png" class="blockpic">
+                        <div class="blockcard" data-id="webinars">
+                                <img src="assets/webinar6.png" class="blockpic">
                             </div>
     
-                            <div class="blockcard">
-                                <img src="https://i.ibb.co/zXWv8gT/Group-49-3x.png" class="blockpic">
+                            <div class="blockcard" data-id="webinars">
+                                <img src="assets/webinar8.png" class="blockpic">
+                        </div>
+                    </div>
+
+                    
+                    <!-- COURSES -->
+                    <div class="row">
+                        <div class="blockcard" data-id="courses">
+                            <img src="assets/course1.png" class="blockpic">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="blockcard" data-id="courses">
+                            <img src="assets/course2.png" class="blockpic">
+                        </div>
+                    </div>
+
+
+                    <!-- COMPETITIONS -->
+                    <div class="row">
+                        <div class="blockcard" data-id="competitions">
+                            <img src="assets/comp1.png" class="blockpic">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="blockcard" data-id="competitions">
+                            <img src="assets/comp2.png" class="blockpic">
+                        </div>
+                    </div>
+
+                    
+                    <!-- ONSITE EVENTS -->
+                    <div class="row">
+                        <div class="blockcard" data-id="onsite">
+                            <img src="assets/onsite1.png" class="blockpic">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="blockcard" data-id="onsite">
+                            <img src="assets/onsite2.png"class="blockpic">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- JAVASCRIPT FOR FILTER FUNCTION -->
+        <script src="filtercatergory.js"></script>
+
+        <!-- BOTTOM NAVIGATION BAR -->
+        <header>
+            <div class="nav-menu">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class='bx bxs-dashboard nav-icon'></i>
+                                <span class="nav-name">Menu</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class='bx bxs-bell nav-icon' ></i>
+                                <span class="nav-name">Alerts</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class='bx bxs-bookmark nav-icon' ></i>
+                                <span class="nav-name">Bookmark</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class='bx bxs-user nav-icon' ></i>
+                                <span class="nav-name">Profile</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class='bx bx-search nav-icon' ></i>
+                                <span class="nav-name">Search</span>
+                            </a>
+                        </li>
+                    </ul>
+            </div>
+        </header>
     </body>
 </html>
