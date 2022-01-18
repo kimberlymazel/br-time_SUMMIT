@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to Python, for beginners</title>
+    <link rel="stylesheet"type="text/css" href="stylesheet_ep1.css"/>
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<!-- BOTTOM NAV BAR -->
+<body>
+    <div class="container">
+        <header>
+            <div class="nav-menu">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class='bx bxs-dashboard nav-icon'></i>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class='bx bxs-bell nav-icon' ></i>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link test register-btn">
+                                <span class="nav-name">Register for this event</span>
+                            </a>
+                        </li>
+                    </ul>
+            </div>
+        </header>
+
+        <!-- HEADER IMAGE -->
+        <div class="hero-image"></div>
+
+        <!-- PROFILE PIC AND DETAILS -->
+        <div class="upper-info">
+            <div class="profile-pic">
+                <img src="assets/binus.jpeg" alt="default profile pic">
+            </div>
+            <div class="pills">
+                <ul class="det">
+                    <li class="date">10 November</li>
+                    <li class="time">07:00 - 10:00</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- JS - REGISTER FORM -->
+        <div class="main">
+            <div class="popup-overlay">
+                <div class="popup-container">
+                    <i class='bx bx-x close'></i>
+                    <form action="https://formsubmit.co/alyshapm10@gmail.com" method="POST" class="input-wrapper">
+                        <h4 class="label">Enter email</h4>
+                        <p class="sublabel">Details of event will be sent to your email.</p>
+                        <input type="email" name="email" id="email-input" placeholder="Email Address"required>
+                        <input type="hidden" name="_autoresponse" value="Thank you for registering on Summit. We will follow up with the details of the webinar H+5 before the event.">
+                        <button type="submit" class="send-btn">Register</button>
+                        <!-- <input type="hidden" name="_next" value=""> input website here-->
+                   </form>
+                </div>
+            </div>
+
+            <!-- INFORMATION -->
+            <div class="info">
+                <h5 class="name">BINUS University</h5>
+                <h2 class="title">Introduction to Python, for beginners</h2>
+                <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <hr class="divider">
+            <div class="rec">
+                <h3 class="rec-title">Similar webinar</h3>
+                <!-- <div class="rec-list"> -->
+                    <ul class="grid">
+                        <a href="event4.html">
+                            <li class="one box">
+                                <img src="assets/finance.jpeg" alt="programming">
+                                <h5 class="subtitle">The Role of Technology in Finance</h5>
+                            </li>
+                        </a>
+
+                        <a href="event2.html">
+                            <li class="two box">
+                                <img src="assets/webdev.jpeg" alt="web development">
+                                <h5 class="subtitle">Fundamentals of UI/UX - Web and app development</h5>
+                            </li>
+                        </a>
+                        
+                        <a href="event3.html">
+                            <li class="three box">
+                                <img src="assets/robots.jpeg" alt="robots">
+                                <h5 class="subtitle">Service Robototisation in Hospitality</h5>
+                            </li>
+                        </a>
+                    </ul>
+                <!-- </div> -->
+            </div>
+    </div>
+    <script src="myscripts.js"></script>
+</body>
+</html>
