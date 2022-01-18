@@ -1,0 +1,129 @@
+*{
+    font-family: Helvetica;
+    padding: 10px;
+}
+
+body {
+    background: rgb(218,249,255);
+    background: linear-gradient(180deg, rgba(153, 219, 229, 1) 0%, rgba(72, 176, 200, 1) 100%);
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+p {
+    text-align: center;
+    color: white;
+}
+
+input {
+    width: 80%;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+/* EMAIL AND PASSWORD FIELDS */
+.container {
+    padding: 0 0 0 1rem;
+    padding-left: 0;
+}
+
+.email {
+    display: flex;
+    border-radius: 30px;
+    background: white;
+    height: 5%;
+    margin-top: 5%;
+    width: 95%;
+}
+
+.password {
+    display: flex;
+    border-radius: 30px;
+    background: white;
+    height: 5%;
+    margin-top: 5%;
+    width: 95%;
+}
+
+/* LOGIN BUTTON */
+.login {
+    display: flex;
+    border-radius: 30px;
+    background: #f29255;
+    height: 5%;
+    margin-top: 5%;
+    width: 95%;
+}
+
+.loginbtn {
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: bold;
+    width: auto;
+    margin: auto;
+    color: white;
+}
+
+.outside {
+    padding: 0px;
+    margin: 0px;
+    padding-top: 30%;
+}
+
+/* GOOGLE N FACEBOOK */
+.google img {
+    height: 20px;
+    margin-top: 0;
+    padding-top: 3px;
+    padding-left: 0;
+}
+
+.facebook img {
+    height: 20px;
+    margin-top: 0;
+    padding-top: 3px;
+}
+
+.google {
+    display: flex;
+    border-radius: 30px;
+    background: #e34133;
+    height: 50%;
+    width: 90%;
+    padding-left: 20px;
+}
+
+.facebook {
+    display: flex;
+    border-radius: 30px;
+    background: #4867aa;
+    height: 50%;
+    width: 90%;
+}
+
+.others {
+    display: inline-grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: fit-content;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    margin-top: 0;
+    padding-top: 3px;
+    padding-left: 15px;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.log {
+    display: flex;
+    justify-content: space-around;
+}
