@@ -116,21 +116,14 @@ hr {
 
 /* TEXT HEADERS */
 
-h1{
-    color: #fcfefe;
-    font-size: 180%;
-    margin-bottom: 5px;
-    margin-top: 15px;
-}
-
-h2 {
+.username {
     color: #fcfefe;
     margin-top: 0px;
     font-size: 20px;
     font-weight: 500;
 }
 
-h3 {
+.welcome {
     color: #fcfefe;
     margin-bottom: 3px;
     font-weight: lighter;
@@ -140,6 +133,10 @@ h3 {
 .title {
     padding: 0 2rem 0 2rem;
     font-size: 25px;
+    color: #fcfefe;
+    font-size: 180%;
+    margin-bottom: 5px;
+    margin-top: 15px;
 }
 
 /* SEARCH BAR */
@@ -283,6 +280,73 @@ ul {
 a {
     text-decoration: none;
 }
+
+/* === WARNING PAGE ===*/
+.warning {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+    line-height: 1.65;
+    background: linear-gradient(to right,#F7F7F7 50%, #00B2CA 50%);
+    width: 100%;
+    height: 100%;
+}
+.content {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+}
+.texts-warning {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.images {
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.images img {
+    width: 70%;
+}
+.warning-title {
+    display: inline-block;
+    position: relative;
+    padding: 0 4rem;
+    margin: 0 0 2rem 0;
+    color: black;
+}
+.warning-body {
+    font-weight: normal;
+    margin-bottom: 1rem;
+    padding: 0; 
+    margin: 0;
+    color: black;
+    padding: 0 4rem;
+}
+.company {
+    padding: 5rem 0 0 0;
+    color: black;
+    font-weight: bold;
+    padding: 0 4rem;
+}
+
+@media screen and (max-width: 620px) {
+    .warning {
+        display: none;
+    }
+}
+@media screen and (min-width: 620px) {
+    .container {
+        display: none;
+    }
+}
+
 
 /* JS */
 .active {

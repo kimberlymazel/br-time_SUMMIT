@@ -76,7 +76,9 @@ a:active {
     overflow-x: scroll;
     /* border: 1px solid red; */
     scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
+  }
+  .filter::-webkit-scrollbar {
+    display: none;
   }
 .filter .pill {
     padding: 7px 20px;
@@ -209,7 +211,7 @@ a:active {
     color: white;
 }
 
-/* small tablet styles */
+/* small tablet styles
 @media screen and (min-width: 620px) {
     hr {
         display: none;
@@ -270,4 +272,15 @@ a:active {
         flex: 0 0 15%;
     }
     
+} */
+
+@media screen and (max-width: 620px) {
+    .warning {
+        display: none;
+    }
+}
+@media screen and (min-width: 620px) {
+    .container {
+        display: none;
+    }
 }
