@@ -1,5 +1,6 @@
-# SUMMIT <br>
-Live link: https://kimberlymazel.github.io/br-time_SUMMIT/
+# SUMMIT 
+Live link: https://kimberlymazel.github.io/br-time_SUMMIT/ <br>
+Demo video link:
 
 ClassName: L1BC
 
@@ -8,8 +9,8 @@ Course: Human Computer Interaction (COMP6800001) – Final Project
 Team: br time
 
 Member: <br>
-Kimberly Mazel 2502022250 <br>
-Alysha Maulidina 2502005906 <br>
+- Kimberly Mazel 2502022250 <br>
+- Alysha Maulidina 2502005906 <br>
 
 # Description of the app
 An application that aims to provide a platform for those interested in learning more about IT by providing resources for them to access.
