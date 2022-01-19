@@ -1,6 +1,6 @@
 # SUMMIT 
 Live link: https://kimberlymazel.github.io/br-time_SUMMIT/ <br>
-Demo video link:
+Demo video link: https://drive.google.com/file/d/1GQQcKTHA9BsobgMCa6bF7ul2jKGG1XTa/view
 
 ClassName: L1BC
 
@@ -9,8 +9,8 @@ Course: Human Computer Interaction (COMP6800001) – Final Project
 Team: br time
 
 Member: <br>
-- Kimberly Mazel 2502022250 <br>
-- Alysha Maulidina 2502005906 <br>
+- Kimberly Mazel 2502022250
+- Alysha Maulidina 2502005906
 
 # Description of the app
 An application that aims to provide a platform for those interested in learning more about IT by providing resources for them to access.
@@ -34,7 +34,7 @@ An application that aims to provide a platform for those interested in learning 
 - stylesheetmain.css - stylesheet for index.html
 - stylesheetcategory.css - stylesheet for explore.html
 - stylesheet_login - stylesheet for login.html
-- stylesheet_ep1.css, stylesheet_ep2.css, stylesheet_ep3.css, stylesheet_ep4.css - stylesheet for event1 - event4.html
+- stylesheet_ep1.css, stylesheet_ep2.css, stylesheet_ep3.css, stylesheet_ep4.css - stylesheet for event1.html, event2.html, event3.html, event4.html
 
 # Contents of javascript files
 - myscript.js - used for register buttons in event pages
