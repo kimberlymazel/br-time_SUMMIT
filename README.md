@@ -1,5 +1,5 @@
-SUMMIT <br>
-Live link:
+# SUMMIT <br>
+Live link: https://kimberlymazel.github.io/br-time_SUMMIT/
 
 ClassName: L1BC
 
@@ -11,11 +11,11 @@ Member: <br>
 Kimberly Mazel 2502022250 <br>
 Alysha Maulidina 2502005906 <br>
 
-Descriptions of the app:<br>
+# Description of the app
 An application that aims to provide a platform for those interested<br>
 in learning more about IT by providing resources for them to access.
 
-Features:<br>
+# Features
 - Find professional courses, webinars, workshop and learning resources all in a designated platform
 - Map feature allows user to find on-site events near them 
 - Easy and straightforward navigation, with categories across all technology subject
